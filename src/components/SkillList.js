@@ -6,7 +6,7 @@ const SkillList = ({skills, deleteSkill}) => {
     <div>
         <ul id='skill-list'>
             {skills.map((skill,idx)=>(
-                <li id={`skill-number-${idx+1}`} onClick={()=>deleteSkill(skill)} style={{cursor:"pointer"}} key={idx}>{skill}</li>
+                <li id={`skill-number-${idx}`} onClick={()=>deleteSkill(skill)} style={{cursor:"pointer"}} key={idx}>{skill}</li>
             ))}
 
         </ul>
