@@ -3,7 +3,7 @@ import SkillList from './SkillList'
 
 const App = () => {
     const [input, setInput]= useState("");
-    const [skills, setSkills] =useState(["HTML","CSS","javaScript", "React"]);
+    const [skills, setSkills] =useState(["HTML","CSS","JavaScript", "React"]);
     const addSkills= useCallback((e)=>{
         e.preventDefault();
         if(input && !skills.includes(input)){
